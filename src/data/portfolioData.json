@@ -1,0 +1,134 @@
+{
+  "profile": {
+    "name": "JACOB JONES",
+    "firstName": "JACOB",
+    "lastName": "JONES",
+    "initials": "Jac.",
+    "title": "Product Designer",
+    "location": "London",
+    "phone": "+77 022 444 05 05",
+    "email": "jacob360@gmail.com",
+    "address": "249 king Sir, 05th Floor, Ultra House Building,\nMelboune, VIC 3000, London.",
+    "age": "25 yrs",
+    "cvLink": "#",
+    "heroImage": "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "aboutImage": "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400",
+    "stats": {
+      "years": "10+",
+      "clients": "14"
+    },
+    "bio": [
+      "Hello there! My name is Jacob Jones. I am a web designer & developer, and I'm very passionate and dedicated to my work.",
+      "With 10+ years experience as a professional a graphic designer, I have acquired the skills and knowledge necessary to make your project a success."
+    ]
+  },
+  "socials": [
+    { "platform": "FACEBOOK", "url": "#", "icon": "Facebook" },
+    { "platform": "TWITTER", "url": "#", "icon": "Twitter" },
+    { "platform": "INSTAGRAM", "url": "#", "icon": "Instagram" },
+    { "platform": "LINKEDIN", "url": "#", "icon": "Linkedin" },
+    { "platform": "DRIBBBLE", "url": "#", "icon": "Dribbble" }
+  ],
+  "experience": [
+    {
+      "period": "2018 - Present",
+      "role": "LEAD UI/UX DESIGNER",
+      "company": "Rolling Thunder"
+    },
+    {
+      "period": "2018 - 2010",
+      "role": "SENIOR UI/UX DESIGNER",
+      "company": "Locost Accessories"
+    },
+    {
+      "period": "2008 - 2006",
+      "role": "JUNIOR UI/UX DESIGNER",
+      "company": "Sagebrush"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "WEB DESIGN",
+      "description": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+      "color": "black",
+      "image": null
+    },
+    {
+      "id": "2",
+      "title": "UI/UX DESIGN",
+      "description": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+      "color": "black",
+      "image": null
+    },
+    {
+      "id": "3",
+      "title": "MOBILE APPLICATION",
+      "description": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+      "color": "purple",
+      "image": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "4",
+      "title": "USER RESEARCH",
+      "description": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+      "color": "black",
+      "image": null
+    }
+  ],
+  "projects": [
+    {
+      "title": "Bally Website Research",
+      "category": "UX case study",
+      "img": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "title": "Bally Website Research",
+      "category": "UX case study",
+      "img": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "title": "Bally Website Research",
+      "category": "UX case study",
+      "img": "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "title": "Bally Website Research",
+      "category": "UX case study",
+      "img": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ],
+  "blogs": [
+    {
+      "date": "10 July, 2022",
+      "title": "12 unique example of portfolio websites",
+      "img": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "date": "10 July, 2022",
+      "title": "12 unique example of portfolio websites",
+      "img": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "date": "10 July, 2022",
+      "title": "12 unique example of portfolio websites",
+      "img": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin.",
+      "author": "Anonymous",
+      "role": "Client",
+      "img": null
+    },
+    {
+      "id": "2",
+      "quote": "File storage made easy - including powerful features you won't find anywhere else. Whether you're.",
+      "author": "Larry Diamond",
+      "role": "Chief Executive Officer, Besnik",
+      "img": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ]
+}
