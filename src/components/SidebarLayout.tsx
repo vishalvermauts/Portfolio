@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Linkedin, Dribbble } from "lucide-react";
-import data from "../../data/portfolioData.json";
+import data from "../data/portfolioData.json";
 
 const IconMap: Record<string, any> = {
   Facebook,
