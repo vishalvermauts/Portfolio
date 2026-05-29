@@ -77,9 +77,15 @@
     {
       "slug": "meshmap",
       "title": "Meshmap",
-      "stack": ["React", "TypeScript", "Tailwind"],
-      "intro": "A distributed mesh network mapping application.",
-      "details": ["Meshmap is a decentralized application designed to visualize and interact with mesh networks in real-time. By connecting to various nodes, users can see the topology and health of their local mesh network.", "The system leverages WebSockets for real-time data ingestion and renders complex network graphs using interactive Canvas-based libraries. It was built with offline-first capabilities to support remote environments where mesh networks are most critical."],
+      "stack": ["React Native", "Kotlin", "Java", "BLE 5.0", "NativeWind"],
+      "intro": "An off-grid P2P tactical mapping & messaging system.",
+      "details": [
+        "MeshMap is a decentralized, infrastructure-free peer-to-peer (P2P) mapping and messaging system designed for deep-wilderness, disaster-struck, and tactically compromised environments.",
+        "Instead of relying on internet connectivity or establishing power-heavy Bluetooth pairings, the application leverages raw Bluetooth Low Energy (BLE) advertisements to broadcast location telemetry and chat messages asynchronously into the ambient airwaves.",
+        "Under the hood, it features a native Android layer written in Kotlin and Java that uses runtime Reflection to bypass standard SDK constraints, forcing the hardware radio to scan across all physical layers including the long-range Coded PHY.",
+        "To fit complex GPS coordinates into legacy 31-byte BLE payloads, MeshMap uses a custom Base36 offset-shifting compression algorithm that reduces the spatial data payload by 47%."
+      ],
+      "conclusion": "The resulting application enables critical off-grid coordination across different devices by concurrently broadcasting over legacy 1M PHY and Extended Coded PHY channels, bridging the gap between legacy consumer hardware and cutting-edge Bluetooth 5.0 capabilities.",
       "screenshots": [
         "/images/projects/meshmap/meshmap_1.jpg",
         "/images/projects/meshmap/meshmap_2.jpg",
