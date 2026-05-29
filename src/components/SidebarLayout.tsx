@@ -38,7 +38,7 @@ export const SidebarLayout = ({ children }: { children: React.ReactNode }) => {
                     to={item.path}
                     end={item.path === "/"}
                     className={({ isActive }) =>
-                      `relative block h-auto p-0 text-left [font-family:'IBM_Plex_Sans',Helvetica] text-[10px] leading-[22px] tracking-[0] transition-opacity ${
+                      `relative block h-auto p-0 text-left [font-family:'IBM_Plex_Sans',Helvetica] text-[12px] leading-[22px] tracking-[0] transition-opacity z-10 ${
                         isActive
                           ? "font-bold text-white"
                           : "font-normal text-white hover:opacity-80"
@@ -49,7 +49,7 @@ export const SidebarLayout = ({ children }: { children: React.ReactNode }) => {
                       <>
                         {item.label}
                         {isActive && (
-                          <span className="pointer-events-none absolute left-0 top-1/2 h-1 w-[95px] -translate-y-1/2 bg-gradient-to-r from-[#ffb147] via-[#ff6c63] to-[#b86adf]" />
+                          <span className="pointer-events-none absolute left-0 top-1/2 h-1 w-[95px] -translate-y-1/2 bg-gradient-to-r from-[#ffb147] via-[#ff6c63] to-[#b86adf] opacity-40 -z-10" />
                         )}
                       </>
                     )}

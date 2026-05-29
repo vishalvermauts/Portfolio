@@ -93,7 +93,7 @@ export const ElementContact = (): JSX.Element => {
             <section className="w-full bg-[linear-gradient(273deg,rgba(255,177,71,1)_0%,rgba(255,108,99,1)_52%,rgba(184,106,223,1)_100%)] px-8 py-7 sm:px-10 sm:py-8 md:px-[34px] md:py-[30px] lg:min-h-[223px] lg:px-[34px] lg:py-[30px]">
               <div className="mx-auto flex w-full max-w-[607px] flex-col">
                 <h2 className="[font-family:'IBM_Plex_Sans',Helvetica] text-[20px] font-bold leading-[1.2] tracking-[0] text-white sm:text-[24px] md:text-[27px]">
-                  ANY PROJECT?
+                  SAY HELLO
                 </h2>
                 <form onSubmit={onSubmit} className="mt-5 flex flex-col gap-5">
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-[45px]">
@@ -131,18 +131,7 @@ export const ElementContact = (): JSX.Element => {
                       className="border-b-[1.5px] border-white/30 bg-transparent outline-none transition-colors focus:border-white/60 text-white resize-none"
                     />
                   </label>
-                  <button
-                    type="button"
-                    className="flex h-auto w-fit items-center gap-2 p-0"
-                  >
-                    <svg className="h-4 w-4 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
-                    </svg>
-                    <span className="[font-family:'IBM_Plex_Sans',Helvetica] text-[9px] font-medium leading-6 tracking-[0] text-white/80">
-                      ATTACH FILE
-                    </span>
-                  </button>
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 mt-2">
                     <Button
                       type="submit"
                       disabled={isSubmitting}
