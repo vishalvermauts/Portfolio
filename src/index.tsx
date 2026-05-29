@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { SidebarLayout } from "./components/SidebarLayout";
 import { About } from "./screens/About/About";
 import { Blogs } from "./screens/Blogs/Blogs";
@@ -24,5 +25,6 @@ createRoot(document.getElementById("app") as HTMLElement).render(
         </Routes>
       </SidebarLayout>
     </BrowserRouter>
+    <SpeedInsights />
   </StrictMode>,
 );
