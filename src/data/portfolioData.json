@@ -80,6 +80,14 @@
       "stack": ["React", "TypeScript", "Tailwind"],
       "intro": "A distributed mesh network mapping application.",
       "details": ["Meshmap is a decentralized application designed to visualize and interact with mesh networks in real-time. By connecting to various nodes, users can see the topology and health of their local mesh network.", "The system leverages WebSockets for real-time data ingestion and renders complex network graphs using interactive Canvas-based libraries. It was built with offline-first capabilities to support remote environments where mesh networks are most critical."],
+      "screenshots": [
+        "/images/projects/meshmap/meshmap_1.jpg",
+        "/images/projects/meshmap/meshmap_2.jpg",
+        "/images/projects/meshmap/meshmap_3.jpg",
+        "/images/projects/meshmap/meshmap_4.jpg",
+        "/images/projects/meshmap/meshmap_5.jpg",
+        "/images/projects/meshmap/meshmap_6.jpg"
+      ],
       "githubLink": "https://github.com/vishalvermauts/Meshmap"
     },
     {
