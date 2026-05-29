@@ -45,8 +45,8 @@ export const ElementContact = (): JSX.Element => {
     }
   };
   return (
-    <section className="flex min-w-0 flex-1 items-center justify-center bg-white px-6 md:px-12 py-16 lg:py-24 lg:px-20">
-      <div className="flex w-full max-w-[1280px] flex-col items-start justify-center gap-6 lg:flex-row lg:items-center lg:gap-8 xl:gap-10">
+    <section className="relative flex flex-1 w-full flex-col justify-center items-center bg-white px-6 md:px-12 py-0 lg:px-20 overflow-hidden">
+      <div className="flex flex-1 w-full max-w-[1280px] flex-col items-start justify-center gap-6 lg:flex-row lg:items-center lg:gap-8 xl:gap-10">
         <section className="w-full max-w-[340px]">
           <header className="mb-4">
             <p className="mb-2 [font-family:'IBM_Plex_Sans',Helvetica] text-[11px] font-semibold italic leading-6 tracking-[0] text-[#141313]">
@@ -79,6 +79,8 @@ export const ElementContact = (): JSX.Element => {
                 <li key={index}>
                   <a
                     href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="h-auto p-0 [font-family:'IBM_Plex_Sans',Helvetica] text-[9px] font-medium leading-6 tracking-[-0.27px] text-[#141313] hover:opacity-70 transition-opacity"
                   >
                     {social.platform}

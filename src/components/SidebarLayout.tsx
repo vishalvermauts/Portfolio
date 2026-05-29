@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Linkedin, Dribbble } from "lucide-react";
 import data from "../data/portfolioData.json";
 
@@ -18,9 +18,13 @@ const navItems = [
 ];
 
 export const SidebarLayout = ({ children }: { children: React.ReactNode }) => {
+  const location = useLocation();
+  const noScrollRoutes = ["/", "/skills", "/contact"];
+  const isNoScroll = noScrollRoutes.includes(location.pathname);
+
   return (
-    <main className="flex flex-col md:flex-row bg-[#ececec] overflow-x-hidden min-h-screen w-full pb-[60px] md:pb-0">
-      <aside className="fixed bottom-0 left-0 right-0 z-50 flex h-[60px] w-full flex-row items-center justify-between bg-[#0f0b0f] text-white md:sticky md:top-0 md:h-screen md:w-[118px] md:flex-col md:justify-start border-t border-white/10 md:border-none shadow-[0_-4px_20px_rgba(0,0,0,0.3)] md:shadow-none">
+    <main className={`flex flex-col md:flex-row bg-[#ececec] w-full pb-[60px] md:pb-0 ${isNoScroll ? 'min-h-[var(--app-height)] md:h-[var(--app-height)] md:overflow-hidden' : 'min-h-[var(--app-height)]'}`}>
+      <aside className="fixed bottom-0 left-0 right-0 z-50 flex h-[60px] w-full flex-row items-center justify-between bg-[#0f0b0f] text-white md:sticky md:top-0 md:h-[var(--app-height)] md:w-[118px] md:flex-col md:justify-start border-t border-white/10 md:border-none shadow-[0_-4px_20px_rgba(0,0,0,0.3)] md:shadow-none">
         <div className="flex h-full w-full flex-row items-center justify-between px-2 md:flex-col md:px-5 md:pb-5 md:pt-6">
           <header className="hidden md:block mb-[38px]">
             <NavLink

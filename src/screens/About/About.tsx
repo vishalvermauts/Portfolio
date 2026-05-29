@@ -34,7 +34,7 @@ export const About = () => (
           <p className="mb-6 [font-family:'IBM_Plex_Sans',Helvetica] text-[16px] font-bold italic text-[#141313]">
             {data.profile.title} <span className="font-normal">based in</span> {data.profile.location}
           </p>
-          <a href={data.profile.cvLink} className="inline-flex items-center gap-2 font-bold text-[14px] border-b-2 border-black pb-1 hover:text-gray-600 transition-colors">
+          <a href={data.profile.cvLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-bold text-[14px] border-b-2 border-black pb-1 hover:text-gray-600 transition-colors">
             Download CV
             <div className="bg-black p-0.5 text-white">
               <ArrowUpRight className="h-4 w-4" />
@@ -119,7 +119,7 @@ export const About = () => (
           <p className="text-[14px] leading-relaxed mb-8 opacity-90 max-w-sm">
             {data.profile.bio[0]}
           </p>
-          <a href={data.profile.cvLink} className="flex items-center gap-3 bg-[#141313] px-6 py-4 text-white hover:bg-black transition-colors w-fit">
+          <a href={data.profile.cvLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-[#141313] px-6 py-4 text-white hover:bg-black transition-colors w-fit">
             <span className="[font-family:'IBM_Plex_Sans',Helvetica] text-[14px] font-medium">Download my resume</span>
             <div className="bg-gradient-to-r from-[#ffb147] via-[#ff6c63] to-[#b86adf] p-1">
               <ArrowUpRight className="h-4 w-4 text-white" />

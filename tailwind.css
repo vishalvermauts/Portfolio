@@ -191,12 +191,24 @@
     @apply border-border;
   }
 
+  :root {
+    --app-height: 100vh;
+  }
+
   body {
-    zoom: 1.5;
     overflow-x: hidden;
     @apply bg-background text-foreground;
     font-feature-settings:
       "rlig" 1,
       "calt" 1;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      zoom: 1.5;
+    }
+    :root {
+      --app-height: calc(100vh / 1.5);
+    }
   }
 }
