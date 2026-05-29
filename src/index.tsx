@@ -8,6 +8,7 @@ import { ElementContact } from "./screens/ElementContact";
 import { Home } from "./screens/Home/Home";
 import { Services } from "./screens/Services/Services";
 import { Works } from "./screens/Works/Works";
+import { ProjectDetail } from "./screens/ProjectDetail/ProjectDetail";
 
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
@@ -16,9 +17,9 @@ createRoot(document.getElementById("app") as HTMLElement).render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/skills" element={<Services />} />
+          <Route path="/projects" element={<Works />} />
+          <Route path="/projects/:slug" element={<ProjectDetail />} />
           <Route path="/contact" element={<ElementContact />} />
         </Routes>
       </SidebarLayout>

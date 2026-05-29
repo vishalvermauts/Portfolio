@@ -1,133 +1,200 @@
 {
   "profile": {
-    "name": "JACOB JONES",
-    "firstName": "JACOB",
-    "lastName": "JONES",
-    "initials": "Jac.",
-    "title": "Product Designer",
-    "location": "London",
-    "phone": "+77 022 444 05 05",
-    "email": "jacob360@gmail.com",
-    "address": "249 king Sir, 05th Floor, Ultra House Building,\nMelboune, VIC 3000, London.",
-    "age": "25 yrs",
+    "name": "VISHAL VERMA",
+    "firstName": "VISHAL",
+    "lastName": "VERMA",
+    "initials": "Vishal",
+    "title": "Cloud & Systems Admin",
+    "location": "Sydney, NSW",
+    "phone": "+61 422 552 209",
+    "email": "vishalvr28@gmail.com",
+    "address": "Sydney, NSW, Australia",
+    "age": "9+ Yrs Exp",
     "cvLink": "#",
     "heroImage": "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=800",
     "aboutImage": "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400",
     "stats": {
-      "years": "10+",
-      "clients": "14"
+      "years": "9+",
+      "clients": "3+"
     },
     "bio": [
-      "Hello there! My name is Jacob Jones. I am a web designer & developer, and I'm very passionate and dedicated to my work.",
-      "With 10+ years experience as a professional a graphic designer, I have acquired the skills and knowledge necessary to make your project a success."
+      "Recent Master of Information Technology graduate with a specialisation in Internetworking from the University of Technology Sydney.",
+      "Bringing 9+ years of IT operations experience across cloud infrastructure, systems administration, and enterprise solutions. Proficient in Azure, AWS, and VMware."
     ]
   },
   "socials": [
-    { "platform": "FACEBOOK", "url": "#", "icon": "Facebook" },
-    { "platform": "TWITTER", "url": "#", "icon": "Twitter" },
-    { "platform": "INSTAGRAM", "url": "#", "icon": "Instagram" },
-    { "platform": "LINKEDIN", "url": "#", "icon": "Linkedin" },
-    { "platform": "DRIBBBLE", "url": "#", "icon": "Dribbble" }
+    { "platform": "LINKEDIN", "url": "https://linkedin.com/in/imvishalverma", "icon": "Linkedin" },
+    { "platform": "EMAIL", "url": "mailto:vishalvr28@gmail.com", "icon": "Mail" }
   ],
   "experience": [
     {
-      "period": "2018 - Present",
-      "role": "LEAD UI/UX DESIGNER",
-      "company": "Rolling Thunder"
+      "period": "Jun 2018 - Jan 2024",
+      "role": "Admin & Logistics Officer (IT Ops)",
+      "company": "Dubai Petroleum Establishment"
     },
     {
-      "period": "2018 - 2010",
-      "role": "SENIOR UI/UX DESIGNER",
-      "company": "Locost Accessories"
+      "period": "Jul 2014 - Aug 2017",
+      "role": "Systems Administrator",
+      "company": "Webgloremedia Solutions"
     },
     {
-      "period": "2008 - 2006",
-      "role": "JUNIOR UI/UX DESIGNER",
-      "company": "Sagebrush"
+      "period": "Sep 2015 - Mar 2016",
+      "role": "Administrative & Logistics Officer",
+      "company": "Paragon Offshore"
     }
   ],
   "services": [
     {
       "id": "1",
-      "title": "WEB DESIGN",
-      "description": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+      "title": "CLOUD INFRASTRUCTURE",
+      "description": "Expertise in designing scalable cloud architectures using Microsoft Azure, AWS (EC2, EKS, S3, RDS), and VMware vSphere/vCenter for 99.98% uptime.",
       "color": "black",
       "image": null
     },
     {
       "id": "2",
-      "title": "UI/UX DESIGN",
-      "description": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+      "title": "SYSTEMS ADMINISTRATION",
+      "description": "Proficient in Windows/Linux Administration, Nginx, Backup & Disaster Recovery, and Cloud Migration with a focus on high-availability enterprise solutions.",
       "color": "black",
       "image": null
     },
     {
       "id": "3",
-      "title": "MOBILE APPLICATION",
-      "description": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+      "title": "NETWORKING & SECURITY",
+      "description": "Advanced routing principles, multilayer switched networks, TCP/IP, DNS, DHCP, firewalls, and mitigation of electromagnetic interference (EMI).",
       "color": "purple",
-      "image": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "image": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       "id": "4",
-      "title": "USER RESEARCH",
-      "description": "You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a template",
+      "title": "IT OPERATIONS & LEADERSHIP",
+      "description": "Managed IT-enabled workflows, risk assessments, and digital documentation for 110+ personnel while maintaining a zero-incident safety record.",
       "color": "black",
       "image": null
     }
   ],
   "projects": [
     {
-      "title": "Bally Website Research",
-      "category": "UX case study",
-      "img": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "slug": "meshmap",
+      "title": "Meshmap",
+      "stack": ["React", "TypeScript", "Tailwind"],
+      "intro": "A distributed mesh network mapping application.",
+      "details": ["Meshmap is a decentralized application designed to visualize and interact with mesh networks in real-time. By connecting to various nodes, users can see the topology and health of their local mesh network.", "The system leverages WebSockets for real-time data ingestion and renders complex network graphs using interactive Canvas-based libraries. It was built with offline-first capabilities to support remote environments where mesh networks are most critical."],
+      "githubLink": "https://github.com/vishalvermauts/Meshmap"
     },
     {
-      "title": "Bally Website Research",
-      "category": "UX case study",
-      "img": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "slug": "hubhop",
+      "title": "HubHop",
+      "stack": ["Next.js", "TypeScript", "Tailwind CSS", "GTFS-Realtime"],
+      "intro": "A real-time Sydney transit planner & telemetry dashboard.",
+      "details": [
+        "HubHop is a high-performance, real-time transit routing application built for the Transport for NSW (TfNSW) network. It moves beyond standard scheduled routing by tapping directly into the absolute source of truth: the raw, binary GTFS-Realtime Protocol Buffer stream.",
+        "This allows HubHop to track trains and transit services across Sydney with sub-minute precision, catching micro-adjustments and delays instantly as they happen on the tracks.",
+        "Operating on a Hybrid Orchestration Pipeline, the frontend pings the backend Trip Planner API for scheduled routes, while simultaneously decoding the live GTFS-Realtime array to dynamically fuse delay telemetry into the UI."
+      ],
+      "screenshots": [
+        "/images/projects/hubhop/screenshot1.png",
+        "/images/projects/hubhop/screenshot2.png",
+        "/images/projects/hubhop/screenshot3.png"
+      ],
+      "conclusion": "The end result is a lightning-fast, edge-rendered transit dashboard capable of tracking Sydney's complex train network without breaking a sweat. It demonstrates the power of tapping directly into raw binary telemetry streams rather than relying on bloated JSON proxies, achieving sub-second UI updates across thousands of concurrent connections.",
+      "githubLink": "https://github.com/vishalvermauts/HubHop"
     },
     {
-      "title": "Bally Website Research",
-      "category": "UX case study",
-      "img": "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "slug": "portfolio",
+      "title": "Portfolio",
+      "stack": ["React", "Vite", "Tailwind"],
+      "intro": "Personal portfolio website built with modern web technologies.",
+      "details": ["This portfolio was designed from the ground up to showcase my skills and projects with a sleek, minimalist aesthetic. It relies on Tailwind CSS for a custom utility-first design system and fully responsive layouts.", "Under the hood, it uses Vite for blazing fast hot module replacement during development and an highly optimized production build, achieving perfect Lighthouse scores for performance and accessibility."],
+      "screenshots": [
+        "/images/screenshots/screenshot_1_home.png",
+        "/images/screenshots/screenshot_2_about.png",
+        "/images/screenshots/screenshot_3_services.png",
+        "/images/screenshots/screenshot_5_project_hubhop.png",
+        "/images/screenshots/screenshot_6_project_astro.png",
+        "/images/screenshots/screenshot_7_contact.png",
+        "/images/screenshots/screenshot_4_projects.png"
+      ],
+      "githubLink": "https://github.com/vishalvermauts/Portfolio"
     },
     {
-      "title": "Bally Website Research",
-      "category": "UX case study",
-      "img": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "slug": "horoscope",
+      "title": "TrueNode Astro",
+      "stack": ["Next.js", "Supabase", "Google Gemini", "Tailwind CSS"],
+      "intro": "An AI-powered astrology, tarot, and celestial tracking workspace.",
+      "details": [
+        "TrueNode Astro is a premium, state-of-the-art Web application that integrates live astronomical calculations, biorhythm waves, tarot spreads, and deep conversational AI guidance. Built on Next.js, Supabase, and Google Gemini, it provides a visually stunning, highly interactive portal for self-reflection and celestial alignment.",
+        "The Cosmic Dashboard displays your profile summary, active retrogrades, a real-time list of planetary positions, and upcoming celestial events. It accurately tracks planetary transits mapped against your birth natal chart using the Astronomy-Engine and maps them into correct Astrological Houses.",
+        "It features a digital Tarot Oracle that analyzes card spreads via Gemini AI, a Biorhythm Tracker mapping 30-day physical and emotional cycles, and a Cosmic Chat that cross-references your exact birth chart and live transits to provide hyper-personalized AI guidance."
+      ],
+      "screenshots": [
+        "/images/projects/horoscope/screenshot_6_forecasts.png",
+        "/images/projects/horoscope/screenshot_7_chart.png",
+        "/images/projects/horoscope/screenshot_8_tarot.png",
+        "/images/projects/horoscope/screenshot_9_bio.png",
+        "/images/projects/horoscope/screenshot_10_chat.png",
+        "/images/projects/horoscope/screenshot_11_events.png",
+        "/images/projects/horoscope/screenshot_12_synergy.png",
+        "/images/projects/horoscope/screenshot_5_overview.png"
+      ],
+      "conclusion": "With comprehensive features like the Synergy Engine calculating romantic synastry between two profiles and Row-Level Security ensuring absolute data privacy, TrueNode Astro functions as a highly secure, feature-rich cosmic oracle.",
+      "githubLink": "https://github.com/vishalvermauts/TrueNode-Astro"
+    },
+    {
+      "slug": "smartv-hybrid-cloud",
+      "title": "SmartV Hybrid Cloud",
+      "stack": ["Azure", "VMware", "Terraform"],
+      "intro": "Designed and deployed a highly available hybrid cloud architecture ensuring 99.99% uptime.",
+      "details": ["SmartV Hybrid Cloud was a major infrastructure initiative that bridged on-premises VMware workloads with Microsoft Azure. The goal was to provide seamless failover, disaster recovery, and scalable compute for enterprise applications.", "Using Terraform, the entire infrastructure was defined as code, allowing for rapid provisioning and consistent environments. The architecture achieved a 99.99% SLA by utilizing Azure Availability Zones and Traffic Manager."],
+      "githubLink": "https://github.com/imvishalverma/smartv-hybrid-cloud"
+    },
+    {
+      "slug": "peermindful-ai",
+      "title": "Peermindful AI Platform",
+      "stack": ["AWS", "Kubernetes", "Python"],
+      "intro": "Architected a scalable backend for an AI-driven mental health platform.",
+      "details": ["Peermindful is a platform that uses AI to connect users with peers and provide mental health resources. The backend was architected to handle sensitive data securely and scale dynamically with user load.", "Deployed on AWS Elastic Kubernetes Service (EKS), the system uses microservices written in Python to interface with large language models. HIPAA compliance was a major focus during the architecture design phase."],
+      "githubLink": "https://github.com/imvishalverma/peermindful-ai"
+    },
+    {
+      "slug": "edumap-location",
+      "title": "Edumap.io Location Platform",
+      "stack": ["Linux", "Nginx", "Docker"],
+      "intro": "Migrated legacy educational mapping services to a containerised microservices architecture.",
+      "details": ["Edumap.io provides geospatial data and routing for educational institutions. The legacy monolithic architecture was struggling to keep up with increasing traffic and feature requests.", "I led the migration to a containerized microservices architecture using Docker. By breaking down the monolith and implementing an Nginx API Gateway, we reduced deployment times by 70% and significantly improved system reliability."],
+      "githubLink": "https://github.com/imvishalverma/edumap-location-platform"
     }
   ],
   "blogs": [
     {
-      "date": "10 July, 2022",
-      "title": "12 unique example of portfolio websites",
-      "img": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "date": "Completed 2026",
+      "title": "Master of Information Technology (Internetworking) - UTS",
+      "img": "https://images.pexels.com/photos/207636/pexels-photo-207636.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
-      "date": "10 July, 2022",
-      "title": "12 unique example of portfolio websites",
-      "img": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "date": "Graduated 2012",
+      "title": "Bachelor of Engineering (Computer Science) - VTU",
+      "img": "https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
-      "date": "10 July, 2022",
-      "title": "12 unique example of portfolio websites",
+      "date": "Certified 2023",
+      "title": "Google IT Support Professional Certificate",
       "img": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
   ],
   "testimonials": [
     {
       "id": "1",
-      "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin.",
-      "author": "Anonymous",
-      "role": "Client",
+      "quote": "Demonstrated expertise in designing scalable cloud architectures, optimising system performance, and leading technical projects.",
+      "author": "Professional Summary",
+      "role": "Vishal Verma",
       "img": null
     },
     {
       "id": "2",
-      "quote": "File storage made easy - including powerful features you won't find anywhere else. Whether you're.",
-      "author": "Larry Diamond",
-      "role": "Chief Executive Officer, Besnik",
+      "quote": "Maintained a zero-incident safety record across high-risk operational environments by strictly adhering to hazard identification protocols.",
+      "author": "Chief Electrician",
+      "role": "Dubai Petroleum Establishment",
       "img": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
   ]

@@ -12,7 +12,7 @@ export const ElementContact = (): JSX.Element => {
               Contact
             </p>
             <h1 className="[font-family:'IBM_Plex_Sans',Helvetica] text-[24px] font-bold leading-[1.15] tracking-[0] text-[#141313] sm:text-[30px] md:text-[34px]">
-              REACH OUT ME
+              REACH OUT TO ME
             </h1>
           </header>
           <address className="not-italic [font-family:'IBM_Plex_Sans',Helvetica] text-[10px] font-normal leading-[16px] tracking-[-0.3px] text-[#141313] whitespace-pre-line">

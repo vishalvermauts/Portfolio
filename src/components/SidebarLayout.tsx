@@ -12,9 +12,8 @@ const IconMap: Record<string, any> = {
 const navItems = [
   { label: "HOME", path: "/" },
   { label: "ABOUT", path: "/about" },
-  { label: "SERVICES", path: "/services" },
-  { label: "WORKS", path: "/works" },
-  { label: "BLOGS", path: "/blogs" },
+  { label: "SKILLS", path: "/skills" },
+  { label: "PROJECTS", path: "/projects" },
   { label: "CONTACT", path: "/contact" },
 ];
 
@@ -72,7 +71,7 @@ export const SidebarLayout = ({ children }: { children: React.ReactNode }) => {
               })}
             </div>
             <p className="mt-5 max-w-[84px] [font-family:'IBM_Plex_Sans',Helvetica] text-[10px] font-normal leading-[14px] tracking-[0] text-white">
-              Copyright &copy;2022 {data.profile.name}. All right reserved.
+              Copyright &copy;2022 {data.profile.name}. All rights reserved.
             </p>
           </div>
         </div>

@@ -4,7 +4,7 @@ export const Services = () => (
   <section className="flex flex-1 flex-col justify-center items-center bg-white px-12 py-2 lg:px-20">
     <div className="flex w-full max-w-[1000px] flex-col items-start justify-center">
       <p className="mb-2 [font-family:'IBM_Plex_Sans',Helvetica] text-[14px] font-semibold italic text-[#141313]">
-        Service
+        Skills
       </p>
       <h1 className="mb-8 [font-family:'IBM_Plex_Sans',Helvetica] text-[40px] font-bold leading-[1.15] text-[#141313] uppercase">
         MY SPECIALTIES

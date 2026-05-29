@@ -2,6 +2,23 @@
 
 Welcome to your personalized, highly-automated portfolio website! This project is built using React, TypeScript, and Tailwind CSS. It features a bold, warm gradient aesthetic, glassmorphism UI elements, and a completely centralized data architecture.
 
+## 📸 Live Demo Gallery
+
+| Home | Projects |
+|:---:|:---:|
+| ![Home](public/images/screenshots/screenshot_1_home.png) | ![Projects](public/images/screenshots/screenshot_4_projects.png) |
+
+| About | Services |
+|:---:|:---:|
+| ![About](public/images/screenshots/screenshot_2_about.png) | ![Services](public/images/screenshots/screenshot_3_services.png) |
+
+| HubHop Detail | TrueNode Astro Detail |
+|:---:|:---:|
+| ![HubHop](public/images/screenshots/screenshot_5_project_hubhop.png) | ![Astro](public/images/screenshots/screenshot_6_project_astro.png) |
+
+| Contact |
+|:---:|
+| ![Contact](public/images/screenshots/screenshot_7_contact.png) |
 ## 🚀 How Changes Work (Content Automation)
 
 You **never** need to touch the `.tsx` React code to update your portfolio! 

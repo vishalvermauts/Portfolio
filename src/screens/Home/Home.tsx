@@ -26,7 +26,7 @@ export const Home = () => (
         
         <div className="mt-12">
           <button className="flex items-center gap-3 bg-[#141313] px-6 py-4 text-white hover:bg-black transition-colors">
-            <span className="[font-family:'IBM_Plex_Sans',Helvetica] text-[14px] font-medium">Let's talk with me</span>
+            <span className="[font-family:'IBM_Plex_Sans',Helvetica] text-[14px] font-medium">Let's talk</span>
             <div className="bg-gradient-to-r from-[#ffb147] via-[#ff6c63] to-[#b86adf] p-1">
               <ArrowUpRight className="h-4 w-4 text-white" />
             </div>
@@ -63,15 +63,6 @@ export const Home = () => (
         {/* Dot pattern */}
         <div className="absolute bottom-8 right-4 h-24 w-24 z-20" style={{ backgroundImage: 'radial-gradient(#141313 2px, transparent 2px)', backgroundSize: '12px 12px' }} />
 
-        {/* Hero Image */}
-        <div className="relative z-10 h-[60vh] max-h-[400px] xl:max-h-[500px] w-auto">
-          <img
-            src={data.profile.heroImage}
-            alt={data.profile.name}
-            className="h-full w-full object-contain drop-shadow-2xl"
-            style={{ maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)' }}
-          />
-        </div>
       </div>
       
       {/* Right Edge Social Icons */}

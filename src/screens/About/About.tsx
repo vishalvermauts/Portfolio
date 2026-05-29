@@ -20,12 +20,6 @@ export const About = () => (
           {/* Orange/Purple shapes */}
           <div className="absolute top-1/2 -left-4 h-32 w-32 -translate-y-1/2 rounded-full bg-[#ffb147]" />
           <div className="absolute top-1/4 -right-8 h-48 w-48 rounded-full bg-[#b86adf]" />
-
-          <img
-            src={data.profile.aboutImage}
-            alt={data.profile.name}
-            className="relative z-10 h-full w-full rounded-full object-cover grayscale brightness-110 contrast-125 border-4 border-white"
-          />
           
           {/* Signature overlay */}
           <div className="absolute -bottom-8 right-0 z-20 font-[cursive] text-5xl text-[#141313] opacity-80 -rotate-12">
@@ -108,12 +102,7 @@ export const About = () => (
           </div>
         </div>
 
-        <div className="mt-12 bg-[#141313] p-10 relative">
-          <div className="absolute top-6 left-6 text-[#333] text-6xl font-serif">"</div>
-          <p className="text-[16px] italic leading-relaxed text-white relative z-10 pl-8 pr-4">
-            "{data.testimonials[0].quote}"
-          </p>
-        </div>
+
       </div>
     </div>
 
