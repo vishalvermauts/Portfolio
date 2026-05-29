@@ -24,6 +24,7 @@
   },
   "socials": [
     { "platform": "LINKEDIN", "url": "https://linkedin.com/in/imvishalverma", "icon": "Linkedin" },
+    { "platform": "GITHUB", "url": "https://github.com/vishalvermauts", "icon": "Github" },
     { "platform": "EMAIL", "url": "mailto:vishalvr28@gmail.com", "icon": "Mail" }
   ],
   "experience": [

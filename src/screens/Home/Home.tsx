@@ -1,22 +1,24 @@
-import { ArrowUpRight, Link as LinkIcon, Mail, Instagram, Dribbble, Facebook, Sparkles, Linkedin, Twitter } from "lucide-react";
+import { ArrowUpRight, Link as LinkIcon, Mail, Instagram, Dribbble, Facebook, Sparkles, Linkedin, Twitter, Github } from "lucide-react";
 import data from "../../data/portfolioData.json";
+import { Link } from "react-router-dom";
 
 const IconMap: Record<string, any> = {
   Facebook,
   Twitter,
   Instagram,
   Linkedin,
-  Dribbble
+  Dribbble,
+  Github
 };
 
 export const Home = () => (
   <section className="relative flex flex-1 flex-col justify-center bg-white overflow-hidden py-4">
     <div className="flex flex-1 flex-col lg:flex-row items-center justify-center">
       {/* Left Column (Text & CTA) */}
-      <div className="flex flex-col justify-center px-12 lg:pl-32 lg:pr-12 z-10">
-        <h1 className="[font-family:'IBM_Plex_Sans',Helvetica] text-[70px] lg:text-[100px] font-bold leading-[0.9] tracking-[-2px] text-[#141313] uppercase">
-          <span className="font-normal text-[#141313]/80 text-[60px] lg:text-[80px]">MY NAME</span><br />
-          <span className="font-normal text-[#141313]/80 text-[60px] lg:text-[80px]">IS </span>
+      <div className="flex flex-col justify-center px-8 lg:pl-32 lg:pr-12 z-10 py-12">
+        <h1 className="[font-family:'IBM_Plex_Sans',Helvetica] text-[40px] md:text-[70px] lg:text-[100px] font-bold leading-[0.9] tracking-[-2px] text-[#141313] uppercase">
+          <span className="font-normal text-[#141313]/80 text-[30px] md:text-[60px] lg:text-[80px]">MY NAME</span><br />
+          <span className="font-normal text-[#141313]/80 text-[30px] md:text-[60px] lg:text-[80px]">IS </span>
           {data.profile.firstName}<br />
           {data.profile.lastName}...
         </h1>
@@ -25,12 +27,14 @@ export const Home = () => (
         </p>
         
         <div className="mt-12">
-          <button className="flex items-center gap-3 bg-[#141313] px-6 py-4 text-white hover:bg-black transition-colors">
-            <span className="[font-family:'IBM_Plex_Sans',Helvetica] text-[14px] font-medium">Let's talk</span>
-            <div className="bg-gradient-to-r from-[#ffb147] via-[#ff6c63] to-[#b86adf] p-1">
-              <ArrowUpRight className="h-4 w-4 text-white" />
-            </div>
-          </button>
+          <Link to="/contact">
+            <button className="flex items-center gap-3 bg-[#141313] px-6 py-4 text-white hover:bg-black transition-colors">
+              <span className="[font-family:'IBM_Plex_Sans',Helvetica] text-[14px] font-medium">Let's talk</span>
+              <div className="bg-gradient-to-r from-[#ffb147] via-[#ff6c63] to-[#b86adf] p-1">
+                <ArrowUpRight className="h-4 w-4 text-white" />
+              </div>
+            </button>
+          </Link>
         </div>
 
         <div className="mt-16 flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-12">
@@ -66,12 +70,12 @@ export const Home = () => (
       </div>
       
       {/* Right Edge Social Icons */}
-      <div className="flex absolute right-4 top-1/2 -translate-y-1/2 flex-col items-center gap-6 z-30">
-        {data.socials.slice(0, 3).map((social, index) => {
+      <div className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 flex-col items-center gap-6 z-30">
+        {data.socials.slice(0, 4).map((social, index) => {
           const Icon = IconMap[social.icon];
           return (
-            <a key={index} href={social.url} className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 text-gray-500 bg-white hover:border-black hover:text-black transition-colors">
-              {Icon && <Icon className="h-4 w-4" />}
+            <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-300 text-black bg-white shadow-md hover:border-black hover:text-black hover:bg-gray-50 transition-colors">
+              {Icon && <Icon className="h-5 w-5" />}
             </a>
           );
         })}
