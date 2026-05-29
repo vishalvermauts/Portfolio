@@ -15,7 +15,7 @@ export const Home = () => (
   <section className="relative flex flex-1 flex-col justify-center bg-white overflow-hidden py-4">
     <div className="flex flex-1 flex-col lg:flex-row items-center justify-center">
       {/* Left Column (Text & CTA) */}
-      <div className="flex flex-col justify-center px-8 lg:pl-32 lg:pr-12 z-10 py-12">
+      <div className="flex flex-col justify-center px-8 lg:pl-32 lg:pr-12 z-10 py-16 lg:py-24">
         <h1 className="[font-family:'IBM_Plex_Sans',Helvetica] text-[40px] md:text-[70px] lg:text-[100px] font-bold leading-[0.9] tracking-[-2px] text-[#141313] uppercase">
           <span className="font-normal text-[#141313]/80 text-[30px] md:text-[60px] lg:text-[80px]">MY NAME</span><br />
           <span className="font-normal text-[#141313]/80 text-[30px] md:text-[60px] lg:text-[80px]">IS </span>

@@ -20,7 +20,7 @@ const navItems = [
 export const SidebarLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main className="flex flex-col md:flex-row bg-[#ececec] overflow-x-hidden min-h-screen w-full pb-[60px] md:pb-0">
-      <aside className="fixed bottom-0 left-0 right-0 z-50 flex h-[60px] w-full flex-row items-center justify-between bg-[#0f0b0f] text-white md:static md:h-screen md:w-[118px] md:flex-col md:justify-start border-t border-white/10 md:border-none shadow-[0_-4px_20px_rgba(0,0,0,0.3)] md:shadow-none">
+      <aside className="fixed bottom-0 left-0 right-0 z-50 flex h-[60px] w-full flex-row items-center justify-between bg-[#0f0b0f] text-white md:sticky md:top-0 md:h-screen md:w-[118px] md:flex-col md:justify-start border-t border-white/10 md:border-none shadow-[0_-4px_20px_rgba(0,0,0,0.3)] md:shadow-none">
         <div className="flex h-full w-full flex-row items-center justify-between px-2 md:flex-col md:px-5 md:pb-5 md:pt-6">
           <header className="hidden md:block mb-[38px]">
             <NavLink

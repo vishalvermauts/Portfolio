@@ -45,7 +45,7 @@ export const ElementContact = (): JSX.Element => {
     }
   };
   return (
-    <section className="flex min-w-0 flex-1 items-center justify-center bg-white px-12 py-2 lg:px-20">
+    <section className="flex min-w-0 flex-1 items-center justify-center bg-white px-6 md:px-12 py-16 lg:py-24 lg:px-20">
       <div className="flex w-full max-w-[1280px] flex-col items-start justify-center gap-6 lg:flex-row lg:items-center lg:gap-8 xl:gap-10">
         <section className="w-full max-w-[340px]">
           <header className="mb-4">

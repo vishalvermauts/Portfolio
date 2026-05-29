@@ -4,7 +4,7 @@ import data from "../../data/portfolioData.json";
 
 export const Works = () => (
   <section className="flex flex-1 flex-col bg-white overflow-y-auto">
-    <div className="px-12 py-10 lg:px-20 max-w-5xl">
+    <div className="px-6 md:px-12 py-16 lg:py-20 lg:px-20 max-w-5xl">
       <p className="mb-2 [font-family:'IBM_Plex_Sans',Helvetica] text-[14px] font-semibold italic text-[#141313]">
         Projects
       </p>

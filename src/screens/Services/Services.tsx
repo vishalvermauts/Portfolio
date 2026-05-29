@@ -1,7 +1,7 @@
 import { Plus, Minus } from "lucide-react";
 import data from "../../data/portfolioData.json";
 export const Services = () => (
-  <section className="flex flex-1 flex-col justify-center items-center bg-white px-12 py-2 lg:px-20">
+  <section className="flex flex-1 flex-col justify-center items-center bg-white px-6 md:px-12 py-16 lg:py-24 lg:px-20">
     <div className="flex w-full max-w-[1000px] flex-col items-start justify-center">
       <p className="mb-2 [font-family:'IBM_Plex_Sans',Helvetica] text-[14px] font-semibold italic text-[#141313]">
         Skills
