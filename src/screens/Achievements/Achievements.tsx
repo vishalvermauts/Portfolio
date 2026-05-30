@@ -3,7 +3,10 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import data from "../../data/achievementsData.json";
 import { Document, Page, pdfjs } from 'react-pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
 export const Achievements = () => {
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
