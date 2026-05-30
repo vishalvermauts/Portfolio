@@ -44,18 +44,29 @@ export const Achievements = () => {
                 Volunteering Photo Gallery
               </h2>
               <div className="w-full h-[250px] md:h-[400px] relative overflow-hidden rounded-lg bg-black/5 group">
-                {data.carousel.map((img, idx) => (
-                  <img
-                    key={idx}
-                    src={img}
-                    alt={`Volunteer highlight ${idx + 1}`}
-                    className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out cursor-pointer ${
-                      idx === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-                    }`}
-                    onClick={() => setLightboxImg(img)}
-                    loading={idx === 0 ? "eager" : "lazy"}
-                  />
-                ))}
+                {data.carousel.map((img, idx) => {
+                  const isVisible = idx === currentSlide;
+                  // Only render the current, previous, and next images to save bandwidth and DOM nodes
+                  const isNear = 
+                    idx === currentSlide || 
+                    idx === (currentSlide - 1 + data.carousel.length) % data.carousel.length || 
+                    idx === (currentSlide + 1) % data.carousel.length;
+
+                  if (!isNear) return null;
+
+                  return (
+                    <img
+                      key={idx}
+                      src={img}
+                      alt={`Volunteer highlight ${idx + 1}`}
+                      className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-in-out cursor-pointer ${
+                        isVisible ? "opacity-100 z-10" : "opacity-0 z-0"
+                      }`}
+                      onClick={() => setLightboxImg(img)}
+                      loading={idx === 0 ? "eager" : "lazy"}
+                    />
+                  );
+                })}
                 
                 {/* Navigation Arrows */}
                 <button 
