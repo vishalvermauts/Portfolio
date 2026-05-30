@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { X, FileText, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import data from "../../data/achievementsData.json";
+import { Document, Page, pdfjs } from 'react-pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 export const Achievements = () => {
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
@@ -124,11 +127,19 @@ export const Achievements = () => {
                       <div className="p-1 bg-gradient-to-r from-[#b86adf] via-[#ff6c63] to-[#ffb147] rounded-xl shadow-md transition-shadow duration-300 group-hover:shadow-xl w-full">
                         <div className="bg-gray-50 rounded-lg overflow-hidden relative aspect-video flex items-center justify-center">
                           {item.type === "pdf" ? (
-                            <iframe 
-                              src={`${item.fileUrl}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`} 
-                              className="w-[120%] h-[120%] border-none pointer-events-none transform origin-top-left scale-[0.85] transition-transform duration-700 group-hover:scale-90"
-                              title={item.title}
-                            />
+                            <Document 
+                              file={item.fileUrl} 
+                              className="w-full h-full flex items-center justify-center"
+                              loading={<span className="text-[10px] text-gray-400">Loading preview...</span>}
+                            >
+                              <Page 
+                                pageNumber={1} 
+                                width={300} 
+                                renderTextLayer={false} 
+                                renderAnnotationLayer={false}
+                                className="transform transition-transform duration-700 group-hover:scale-105"
+                              />
+                            </Document>
                           ) : (
                             <img 
                               src={item.fileUrl} 
