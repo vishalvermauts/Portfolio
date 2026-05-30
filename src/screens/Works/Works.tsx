@@ -13,64 +13,70 @@ export const Works = () => (
       </h1>
 
       <div className="flex flex-col gap-12">
-        {data.projects.map((w, index) => (
-          <div key={index} className="grid grid-cols-1 lg:grid-cols-[1fr_240px] gap-10 items-center border-b border-[#141313]/10 pb-12 last:border-0">
-            <div className="flex flex-col">
-              <h2 className="mb-4 [font-family:'IBM_Plex_Sans',Helvetica] text-[32px] font-bold leading-[1.1] text-[#141313]">
-                {w.title}
-              </h2>
-              
-              <div className="flex flex-wrap gap-2 mb-6">
-                {w.stack.map((tech, i) => (
-                  <span key={i} className="bg-gray-100 px-3 py-1 text-[12px] font-bold text-[#141313]/70 rounded-full border border-gray-200">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              
-              <p className="mb-8 [font-family:'IBM_Plex_Sans',Helvetica] text-[18px] font-medium leading-relaxed text-[#141313]/80 max-w-2xl">
-                {w.intro}
-              </p>
-              
-              <div className="flex gap-6 mt-auto pt-2">
-                <Link
-                  to={`/projects/${w.slug}`}
-                  className="group flex items-center gap-2 text-[14px] font-bold text-[#141313] hover:text-gray-600 transition-colors w-fit border-b-2 border-[#141313] pb-1 hover:border-gray-600"
-                >
-                  View Details
-                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" strokeWidth={2} />
-                </Link>
+        {data.projects.map((w, index) => {
+          const displayImage = (w as any).screenshots && (w as any).screenshots.length > 0 
+            ? (w as any).screenshots[(w as any).screenshots.length - 1]
+            : (w as any).richDetails?.find((d: any) => d.type === 'img')?.content;
 
-                <a 
-                  href={w.githubLink} 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="group flex items-center gap-2 text-[14px] font-bold text-gray-500 hover:text-[#141313] transition-colors w-fit pb-1"
-                >
-                  <Github className="h-4 w-4" />
-                  GitHub
-                </a>
-              </div>
-            </div>
+          return (
+            <div key={index} className="grid grid-cols-1 lg:grid-cols-[1fr_240px] gap-10 items-center border-b border-[#141313]/10 pb-12 last:border-0">
+              <div className="flex flex-col">
+                <h2 className="mb-4 [font-family:'IBM_Plex_Sans',Helvetica] text-[32px] font-bold leading-[1.1] text-[#141313]">
+                  {w.title}
+                </h2>
+                
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {w.stack.map((tech, i) => (
+                    <span key={i} className="bg-gray-100 px-3 py-1 text-[12px] font-bold text-[#141313]/70 rounded-full border border-gray-200">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                
+                <p className="mb-8 [font-family:'IBM_Plex_Sans',Helvetica] text-[18px] font-medium leading-relaxed text-[#141313]/80 max-w-2xl">
+                  {w.intro}
+                </p>
+                
+                <div className="flex gap-6 mt-auto pt-2">
+                  <Link
+                    to={`/projects/${w.slug}`}
+                    className="group flex items-center gap-2 text-[14px] font-bold text-[#141313] hover:text-gray-600 transition-colors w-fit border-b-2 border-[#141313] pb-1 hover:border-gray-600"
+                  >
+                    View Details
+                    <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" strokeWidth={2} />
+                  </Link>
 
-            {(w as any).screenshots && (w as any).screenshots.length > 0 && (
-              <div className="w-full relative mt-4 lg:mt-0 group">
-                <Link to={`/projects/${w.slug}`}>
-                  <div className="p-1 bg-gradient-to-r from-[#b86adf] via-[#ff6c63] to-[#ffb147] rounded-xl shadow-md transition-shadow duration-300 group-hover:shadow-xl w-full">
-                    <div className="bg-white rounded-lg overflow-hidden relative aspect-video">
-                      <img 
-                        src={(w as any).screenshots[(w as any).screenshots.length - 1]} 
-                        alt={w.title} 
-                        className="w-full h-full object-cover object-left-top transform transition-transform duration-700 group-hover:scale-105" 
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
+                  <a 
+                    href={w.githubLink} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="group flex items-center gap-2 text-[14px] font-bold text-gray-500 hover:text-[#141313] transition-colors w-fit pb-1"
+                  >
+                    <Github className="h-4 w-4" />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+
+              {displayImage && (
+                <div className="w-full relative mt-4 lg:mt-0 group">
+                  <Link to={`/projects/${w.slug}`}>
+                    <div className="p-1 bg-gradient-to-r from-[#b86adf] via-[#ff6c63] to-[#ffb147] rounded-xl shadow-md transition-shadow duration-300 group-hover:shadow-xl w-full">
+                      <div className="bg-white rounded-lg overflow-hidden relative aspect-video">
+                        <img 
+                          src={displayImage} 
+                          alt={w.title} 
+                          className="w-full h-full object-cover object-left-top transform transition-transform duration-700 group-hover:scale-105" 
+                        />
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
-            )}
-          </div>
-        ))}
+                  </Link>
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
 
       <div className="mt-12 flex justify-start">
