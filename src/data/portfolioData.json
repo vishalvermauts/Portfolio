@@ -63,7 +63,7 @@
       "title": "NETWORKING & SECURITY",
       "description": "Advanced routing principles, multilayer switched networks, TCP/IP, DNS, DHCP, firewalls, and mitigation of electromagnetic interference (EMI).",
       "color": "purple",
-      "image": "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600"
+      "image": null
     },
     {
       "id": "4",

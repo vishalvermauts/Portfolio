@@ -1,0 +1,139 @@
+{
+  "categories": [
+    {
+      "id": "certifications",
+      "title": "Professional Certifications",
+      "items": [
+        {
+          "id": "ccna",
+          "title": "Cisco CCNA Enterprise Networking, Security, and Automation",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/CCNA-_Enterprise_Networking-_Security-_and_Automation_certificate_vishal-verma-student-uts-edu-au_24fddb3e-5315-435f-9eb1-eb11faf71438.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "mhfa",
+          "title": "Standard Mental Health First Aid (MHFA) Accreditation",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/Standard MHFA - Accreditation Certificate-2024-07-20 020215.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "completion",
+          "title": "Student Leadership Program",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/VISHAL VERMA Program Completion.pdf",
+          "type": "pdf"
+        }
+      ]
+    },
+    {
+      "id": "competitions",
+      "title": "Competition Awards",
+      "items": [
+        {
+          "id": "netacad_silver",
+          "title": "Scoring Silver in Cisco NetAcad Riders 2025",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/Scoring Silver in Cisco NetAcad Riders 2025.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "netacad",
+          "title": "Cisco APJC NetAcad Riders Competition - Round 1 Result",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/APJC NetAcad Riders Round 1 Result 2025.pdf",
+          "type": "pdf"
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "title": "Community & Leadership",
+      "items": [
+        {
+          "id": "sxsw",
+          "title": "SXSW 2024 Certification of Participation",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/SXSW_2024_Certificate conv 1.png",
+          "type": "image"
+        },
+        {
+          "id": "nsw_volunteer",
+          "title": "NSW Volunteer of the Year Award",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/NSW Volunteer of the Year Award.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "soul_award",
+          "title": "SOUL Award Certificate",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/SOUL Award Certificate -  VISHAL VERMA.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "marathon",
+          "title": "TCS Sydney Marathon Volunteer",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/2024 TCS Sydney Marathon, presented by ASICS.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "nike",
+          "title": "Nike After Dark Sydney Volunteer Recognition",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/Nike After Dark Sydney.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "sculptures",
+          "title": "Sculptures by the SEA",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/Sculptures by the SEA.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "soul_recommendation",
+          "title": "SOUL Letter of Recommendation",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/SOUL Letter of Recommendation -  VISHAL VERMA.pdf",
+          "type": "pdf"
+        },
+        {
+          "id": "jnj",
+          "title": "Bondi to Manly Ultra Volunteer",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/Johnson & Johnson Bondi to Manly Ultra (2) conv 1.png",
+          "type": "image"
+        },
+        {
+          "id": "redcross",
+          "title": "Red Cross Anzac Day 2024 Certificate of Appreciation",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/Red Cross Certificate of Appreciation Anzac Day 2024 conv 1.png",
+          "type": "image"
+        },
+        {
+          "id": "tfhb",
+          "title": "TFHB Volunteer Recognition",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/VishalVerma_TFHB_volunteer conv 1.png",
+          "type": "image"
+        },
+        {
+          "id": "winterfest",
+          "title": "RNA Winterfest Event Volunteering",
+          "fileUrl": "/images/awards/Volunteering UTS & Local Community/rna conv 1.png",
+          "type": "image"
+        }
+      ]
+    }
+  ],
+  "carousel": [
+    "/images/awards/Volunteering pics/20240425_134943.jpg",
+    "/images/awards/Volunteering pics/20240708_110410.jpg",
+    "/images/awards/Volunteering pics/20240830_123445.jpg",
+    "/images/awards/Volunteering pics/20240830_134808.jpg",
+    "/images/awards/Volunteering pics/20240912_165516.jpg",
+    "/images/awards/Volunteering pics/20240920_145359.jpg",
+    "/images/awards/Volunteering pics/20241001_142755.jpg",
+    "/images/awards/Volunteering pics/20241001_161059.jpg",
+    "/images/awards/Volunteering pics/DSC01608.jpg",
+    "/images/awards/Volunteering pics/DSCF3538.jpg",
+    "/images/awards/Volunteering pics/IMG-20240509-WA0001.jpg",
+    "/images/awards/Volunteering pics/IMG-20240803-WA0007.jpg",
+    "/images/awards/Volunteering pics/IMG-20240925-WA0009.jpg",
+    "/images/awards/Volunteering pics/IMG-20241014-WA0003.jpg",
+    "/images/awards/Volunteering pics/IMG_4452.jpg",
+    "/images/awards/Volunteering pics/IMG_4985.jpg",
+    "/images/awards/Volunteering pics/IMG_8593.jpg",
+    "/images/awards/Volunteering pics/IMG_9298.jpg",
+    "/images/awards/Volunteering pics/RNA Winterfest.jpg"
+  ]
+}

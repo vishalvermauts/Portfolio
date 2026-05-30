@@ -9,6 +9,7 @@ import { Home } from "./screens/Home/Home";
 import { Services } from "./screens/Services/Services";
 import { Works } from "./screens/Works/Works";
 import { ProjectDetail } from "./screens/ProjectDetail/ProjectDetail";
+import { Achievements } from "./screens/Achievements/Achievements";
 
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById("app") as HTMLElement).render(
           <Route path="/skills" element={<Services />} />
           <Route path="/projects" element={<Works />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
+          <Route path="/achievements" element={<Achievements />} />
           <Route path="/contact" element={<ElementContact />} />
         </Routes>
       </SidebarLayout>

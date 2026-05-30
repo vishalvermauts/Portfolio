@@ -14,12 +14,13 @@ const navItems = [
   { label: "ABOUT", path: "/about" },
   { label: "SKILLS", path: "/skills" },
   { label: "PROJECTS", path: "/projects" },
+  { label: "ACHIEVEMENTS", path: "/achievements" },
   { label: "CONTACT", path: "/contact" },
 ];
 
 export const SidebarLayout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
-  const noScrollRoutes = ["/", "/skills", "/contact"];
+  const noScrollRoutes = ["/", "/contact"];
   const isNoScroll = noScrollRoutes.includes(location.pathname);
 
   return (
