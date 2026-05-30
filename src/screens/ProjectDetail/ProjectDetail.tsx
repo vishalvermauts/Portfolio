@@ -61,12 +61,70 @@ export const ProjectDetail = () => {
         </div>
 
         <div className="prose prose-lg max-w-none">
-          <h2 className="text-[24px] font-bold text-[#141313] mb-6 border-b border-[#141313]/10 pb-2 uppercase">How It Works</h2>
-          {project.details.map((paragraph, index) => (
-            <p key={index} className="mb-6 [font-family:'IBM_Plex_Sans',Helvetica] text-[16px] leading-[1.8] text-[#141313]/80">
-              {paragraph}
-            </p>
-          ))}
+          {(project as any).richDetails ? (
+            (project as any).richDetails.map((section: any, idx: number) => {
+              switch (section.type) {
+                case 'h3':
+                  return <h3 key={idx} className={`text-[24px] font-bold text-[#141313] mb-6 ${idx !== 0 ? 'mt-12' : ''} border-b border-[#141313]/10 pb-2 uppercase`}>{section.content}</h3>;
+                case 'p':
+                  return <p key={idx} className="mb-6 [font-family:'IBM_Plex_Sans',Helvetica] text-[16px] leading-[1.8] text-[#141313]/80">{section.content}</p>;
+                case 'img':
+                  return (
+                    <div key={idx} className="my-10 p-1 bg-gradient-to-r from-[#b86adf] via-[#ff6c63] to-[#ffb147] rounded-xl shadow-xl w-full max-w-4xl mx-auto">
+                      <div className="bg-white rounded-lg overflow-hidden border-2 border-transparent">
+                        <img src={section.content} alt="Project visual" className="w-full h-auto object-cover rounded-md" />
+                      </div>
+                    </div>
+                  );
+                case 'ul':
+                  return (
+                    <ul key={idx} className="list-disc pl-6 mb-8 space-y-3">
+                      {section.content.map((li: string, i: number) => (
+                        <li key={i} className="[font-family:'IBM_Plex_Sans',Helvetica] text-[16px] leading-[1.8] text-[#141313]/80">
+                          <span dangerouslySetInnerHTML={{ __html: li.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+                        </li>
+                      ))}
+                    </ul>
+                  );
+                case 'table':
+                  return (
+                    <div key={idx} className="overflow-x-auto mb-10 mt-6 border border-[#141313]/10 rounded-lg shadow-sm">
+                      <table className="w-full text-left border-collapse">
+                        <thead className="bg-gray-50 border-b border-[#141313]/10">
+                          <tr>
+                            {section.headers.map((h: string, i: number) => (
+                              <th key={i} className="px-6 py-4 text-[14px] font-bold uppercase tracking-wider text-[#141313]">{h}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-[#141313]/5 bg-white">
+                          {section.rows.map((row: string[], rIdx: number) => (
+                            <tr key={rIdx} className="hover:bg-gray-50/50 transition-colors">
+                              {row.map((cell: string, cIdx: number) => (
+                                <td key={cIdx} className={`px-6 py-4 text-[15px] [font-family:'IBM_Plex_Sans',Helvetica] ${cIdx === 0 ? 'font-bold text-[#141313]' : 'text-[#141313]/80'}`}>
+                                  {cell}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  );
+                default:
+                  return null;
+              }
+            })
+          ) : (
+            <>
+              <h2 className="text-[24px] font-bold text-[#141313] mb-6 border-b border-[#141313]/10 pb-2 uppercase">How It Works</h2>
+              {project.details.map((paragraph, index) => (
+                <p key={index} className="mb-6 [font-family:'IBM_Plex_Sans',Helvetica] text-[16px] leading-[1.8] text-[#141313]/80">
+                  {paragraph}
+                </p>
+              ))}
+            </>
+          )}
         </div>
 
         {(project as any).screenshots && (project as any).screenshots.length > 0 && (

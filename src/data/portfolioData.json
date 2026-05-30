@@ -75,6 +75,48 @@
   ],
   "projects": [
     {
+      "slug": "network-automation-framework",
+      "title": "Multi-Vendor Network Automation & Observability Engine",
+      "stack": ["Python 3.8+", "Netmiko", "PyYAML", "Grafana", "concurrent.futures"],
+      "intro": "A scalable, multi-threaded network discovery and auditing engine.",
+      "richDetails": [
+        { "type": "h3", "content": "The Challenge" },
+        { "type": "p", "content": "Managing enterprise-grade, multi-vendor network environments (Cisco IOS-XE, NX-OS, IOS-XR) relies heavily on manual CLI access. This method is slow, prone to human error, and fails to provide a unified \"source of truth\" for the network state. Furthermore, standard configuration management does not offer real-time visibility into operational trends." },
+        { "type": "h3", "content": "The Solution" },
+        { "type": "p", "content": "I engineered a high-performance, multi-threaded automation framework that bridges the gap between raw CLI data and actionable network intelligence. By leveraging Infrastructure as Code (IaC) principles, I transformed manual audit workflows into a standardized, repeatable automated process." },
+        { "type": "img", "content": "/images/projects/network-automation-framework/1.jpg" },
+        { "type": "h3", "content": "Technical Implementation & Architecture" },
+        { "type": "ul", "content": [
+          "**Automation Core:** Developed in Python 3.8+, utilizing Netmiko for abstracted, secure SSH interactions across heterogeneous device models.",
+          "**Decoupled Inventory:** Implemented a YAML-based inventory system, separating device-specific variables (IPs, credentials, platform modes) from the execution logic to ensure modularity and scalability.",
+          "**Concurrency:** Utilized Python's `concurrent.futures` to enable multi-threaded execution, allowing for parallel data collection across dozens of network nodes.",
+          "**Error Handling:** Architected robust exception management using context managers, ensuring graceful handling of connection timeouts, authentication failures, and unreachable devices."
+        ] },
+        { "type": "h3", "content": "Observability Pipeline" },
+        { "type": "ul", "content": [
+          "**Data Processing:** Processed unstructured CLI output into structured data formats.",
+          "**Visualization:** Integrated with Grafana (via a time-series database backend like InfluxDB/Prometheus) to visualize operational status, interface utilization trends, and compliance health."
+        ] },
+        { "type": "h3", "content": "Technical Specs (At a Glance)" },
+        { "type": "table", "headers": ["Component", "Technology", "Purpose"], "rows": [
+          ["Language", "Python 3.8+", "Core logic and automation script execution"],
+          ["Connectivity", "Netmiko", "Multi-vendor SSH abstraction (IOS-XE, NX-OS, IOS-XR)"],
+          ["Data Structure", "YAML", "Decoupled Inventory Management"],
+          ["Concurrency", "concurrent.futures", "Parallel device polling for high-speed audits"],
+          ["Visualization", "Grafana", "Real-time observability dashboard for operational metrics"],
+          ["Source Control", "Git / GitHub", "CI/CD-ready code lifecycle management"]
+        ] },
+        { "type": "h3", "content": "Key Outcomes" },
+        { "type": "ul", "content": [
+          "**80% Efficiency Gain:** Reduced the time required to perform a comprehensive network-wide operational state audit from hours to minutes.",
+          "**Standardization:** Created a unified interface for operational data retrieval, eliminating discrepancies between vendor-specific command outputs.",
+          "**Observability:** Enabled proactive monitoring by feeding audit data into Grafana, allowing for real-time visualization of network health rather than relying on reactive troubleshooting.",
+          "**Scalability:** The framework easily adapts to new hardware; adding a device or a vendor platform simply requires updating the YAML inventory, not altering the core engine."
+        ] }
+      ],
+      "githubLink": "https://github.com/vishalvermauts/network-automation-framework"
+    },
+    {
       "slug": "meshmap",
       "title": "Meshmap",
       "stack": ["React Native", "Kotlin", "Java", "BLE 5.0", "NativeWind"],
